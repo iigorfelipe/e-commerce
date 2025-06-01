@@ -57,15 +57,11 @@ export const SectionContatos = () => (
     title="Entre em contato e tire suas dúvidas"
     items={[
       <div className="flex items-center gap-2" key="tel">
-        <img
-          src={imagePath("/icons/telephone.svg")}
-          className="size-8"
-          alt=""
-        />
+        <img src={imagePath("icons/telephone.svg")} className="size-8" alt="" />
         <span>+55 48 3333 3333</span>
       </div>,
       <div className="flex items-center gap-2" key="email">
-        <img src={imagePath("/icons/email.svg")} className="size-8" alt="" />
+        <img src={imagePath("icons/email.svg")} className="size-8" alt="" />
         <span>
           sac@loremipsum.com.br ou <br />
           rp@loremipsum.com.br
@@ -80,9 +76,9 @@ export const SectionSocial = () => (
     title="Nos acompanhe também nas redes sociais"
     items={[
       <div className="flex gap-4" key="social">
-        <img src={imagePath("/icons/insta.svg")} className="size-8" alt="" />
-        <img src={imagePath("/icons/youtube.svg")} className="size-8" alt="" />
-        <img src={imagePath("/icons/facebook.svg")} className="size-8" alt="" />
+        <img src={imagePath("icons/insta.svg")} className="size-8" alt="" />
+        <img src={imagePath("icons/youtube.svg")} className="size-8" alt="" />
+        <img src={imagePath("icons/facebook.svg")} className="size-8" alt="" />
       </div>,
     ]}
   />

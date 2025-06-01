@@ -3,6 +3,18 @@
 
 @custom-variant dark (&:is(.dark *));
 @theme inline {
+  --font-theme-raleway: "Raleway", sans-serif;
+  --color-theme-orange: #e57200;
+  --color-theme-gray-dark: #4c4d4c;
+  --color-theme-purple: #80276c;
+  --color-theme-muted: #f8f8f8;
+  --color-theme-black: #121212;
+  --color-theme-gray-60: #ebebeb;
+  --color-theme-gray-brand: #707372;
+
+  --breakpoint-0.5xl: 1320px;
+  --breakpoint-3xl: 1600px;
+
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);

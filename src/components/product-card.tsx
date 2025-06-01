@@ -32,7 +32,7 @@ export const ProductCard = memo(({ product, page }: ProductProps) => {
         src={product.image}
         alt={product.name}
         loading="lazy"
-        className="h-[238px] cursor-pointer rounded-md group-hover:opacity-75 lg:h-[338px]"
+        className="h-[238px] cursor-pointer rounded-sm group-hover:opacity-75 lg:h-[338px] lg:rounded-md"
       />
       <div className="flex flex-col">
         <p className="font-theme-raleway text-sm font-medium sm:text-base">

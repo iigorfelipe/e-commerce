@@ -34,7 +34,8 @@ export const ProductDetails = ({ productDetail }: ProductDetailsProps) => {
           Nível {productDetail.details.level.split("-")[0]}
         </p>
         <p>{productDetail.details.level.split("-")[1]}</p>
-        <div className="border-theme-gray-60 border-t" />
+
+        <div className="border-theme-gray-60 my-6 border-t" />
       </div>
     </div>
   );

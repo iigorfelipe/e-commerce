@@ -80,6 +80,10 @@ npm run dev
 
 ⚠️ Se encontrar qualquer dificuldade, sinta-se à vontade para me contatar através dos links fornecidos ao final desta documentação.
 
+##
+
+⚠️ Observação: algumas funcionalidades, como os filtros e a finalização da tela de detalhes do produto, ainda não estão 100% concluídas. Foquei em entregar a base visual responsiva, conforme os requisitos. Em um cenário real, essas funcionalidades seriam divididas em tasks e implementadas de forma iterativa, com foco em entregas contínuas e de valor para o usuário. Continuarei trabalhando para integrar essas partes faltantes e expandir o projeto com novas funcionalidades e melhorias, conforme o tópico abaixo.
+
 ## 💡 Melhorias Futuras:
 
 Caso tivesse mais tempo, eu implementaria:

@@ -19,7 +19,7 @@ export const Header = () => {
 
   return (
     <div className="flex flex-col gap-2 py-2 lg:py-0">
-      <div className="0.5xl:px-[86px] flex flex-row items-center gap-4 py-1.5 lg:my-4">
+      <div className="0.5xl:px-[86px] flex flex-row items-center gap-4 py-1.5 lg:my-4 lg:px-10">
         <div className="lg:hidden">
           <SideBar />
         </div>

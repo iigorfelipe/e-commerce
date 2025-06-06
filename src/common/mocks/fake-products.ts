@@ -17,6 +17,9 @@ const productDetails: TProductDetail = {
     imagePath("images/product-detail-2.jpg"),
     imagePath("images/product-detail-3.png"),
   ],
+  colors: [{ label: "Preto", hex: "#000" }],
+  model: "Bilateral",
+  sizes: ["Único", "Especial"],
 };
 
 export const data: TData = {

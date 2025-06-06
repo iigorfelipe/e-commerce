@@ -17,6 +17,9 @@ export type TProductDetail = {
   composition: string;
   description: string;
   images: string[];
+  colors: { label: string; hex: string }[];
+  model: string;
+  sizes: string[];
 };
 
 export type TData = {

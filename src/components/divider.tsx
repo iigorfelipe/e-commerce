@@ -1,3 +1,8 @@
-export const Divider = () => (
-  <div className="border-theme-gray-60 -mx-2 border-t" />
+type DividerProps = {
+  fullWidth?: boolean;
+};
+export const Divider = ({ fullWidth = true }: DividerProps) => (
+  <div
+    className={`border-theme-gray-60 border-t ${fullWidth && "mx-undo-mobile-px md:mx-undo-container-px"}`}
+  />
 );

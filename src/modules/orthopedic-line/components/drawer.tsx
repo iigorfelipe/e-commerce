@@ -24,7 +24,7 @@ export const OrthopedicLineDrawer = () => {
         <div className="rounded-lg">
           <Button
             variant="ghost"
-            className="bg-theme-muted flex h-[84px] w-full rounded-none py-8 pl-4"
+            className="bg-theme-gray-50 flex h-[5.25rem] w-full rounded-none py-8 pl-4"
           >
             <span className="text-theme-black mr-auto">Lançamento</span>
           </Button>

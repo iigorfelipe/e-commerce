@@ -13,12 +13,12 @@ export const ProductDetailCarousel = ({ images }: { images: string[] }) => {
   const [selectedImg, setSelectedImg] = useState(images[0]);
 
   return (
-    <div className="flex flex-col gap-4 lg:w-[684px]">
+    <div className="flex flex-col gap-4 lg:w-[42.75rem]">
       <div className="relative">
         <img
           src={selectedImg}
           alt="detalhes do produto"
-          className="h-[300px] w-full rounded-md bg-center object-cover sm:h-[400px] lg:h-[523px]"
+          className="h-[18.75rem] w-full rounded-md bg-center object-cover sm:h-[25rem] lg:h-[32.6875rem]"
         />
         <Button
           variant="ghost"
@@ -42,9 +42,9 @@ export const ProductDetailCarousel = ({ images }: { images: string[] }) => {
                   <img
                     src={img}
                     alt={`Miniatura ${index + 1}`}
-                    className={`h-[112px] w-[112px] rounded-md transition-opacity duration-200 ${
+                    className={`h-[7rem] w-[7rem] rounded-md transition-opacity duration-200 ${
                       isSelected
-                        ? "border-b-theme-orange border-b-2 opacity-100"
+                        ? "border-b-theme-orange-brand border-b-2 opacity-100"
                         : "border-transparent opacity-50 hover:opacity-80"
                     }`}
                   />

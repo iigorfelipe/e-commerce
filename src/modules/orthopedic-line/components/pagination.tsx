@@ -54,12 +54,12 @@ export const PaginationControlled = ({
         {pageItems.map((item, index) => (
           <PaginationItem key={index}>
             {item === "..." ? (
-              <PaginationEllipsis className="text-theme-gray-brand items-end pb-[5px]" />
+              <PaginationEllipsis className="text-theme-gray-brand items-end pb-[0.3125rem]" />
             ) : (
               <PaginationLink
                 isActive={item === page}
                 onClick={() => onPageChange(item)}
-                className={`size-[28px] rounded-full ${item === page ? "text-theme-black border-0 drop-shadow-black" : "text-theme-gray-brand"}`}
+                className={`size-[1.75rem] rounded-full ${item === page ? "text-theme-black border-0 drop-shadow-black" : "text-theme-gray-brand"}`}
                 style={{
                   fontFamily: "Roboto, sans-serif",
                   ...(item === page && {

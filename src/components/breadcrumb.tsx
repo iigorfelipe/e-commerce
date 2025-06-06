@@ -48,23 +48,21 @@ export const Breadcrumb = () => {
   }, [currentProduct, id, page, partsOfPath]);
 
   return (
-    <nav className="text-theme-gray-dark font-theme-raleway text-xs font-medium xl:text-base">
+    <nav className="sm:text-body-base-500 text-xs">
       {breadcrumbItems.map((item) => (
         <span key={item.to}>
           {!item.isLast ? (
             <>
               <Link
                 to={item.to}
-                className="text-[#989D9E] capitalize hover:underline"
+                className="text-theme-gray-dark capitalize hover:underline"
               >
                 {item.label}
               </Link>
-              <span className="text-theme-gray-dark mx-2">&gt;</span>
+              <span className="text-theme-black mx-2">&gt;</span>
             </>
           ) : (
-            <span className="text-theme-black font-bold capitalize">
-              {item.label}
-            </span>
+            <span className="text-theme-black capitalize">{item.label}</span>
           )}
         </span>
       ))}

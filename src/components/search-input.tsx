@@ -82,10 +82,10 @@ export const SearchInput = ({ searchType, fullWidth }: SearchInputProps) => {
   return (
     <div
       ref={wrapperRef}
-      className={`${input.show && "gap-2"} bg-theme-muted flex items-center rounded-full p-2.5 py-2 ${fullWidth && "w-full rounded-md"}`}
+      className={`${input.show && "gap-2"} bg-theme-gray-50 flex items-center rounded-full p-2.5 py-2 ${fullWidth && "w-full rounded-md"}`}
     >
       <button onClick={() => input.setShow(true)}>
-        <Search className="text-theme-gray size-4" />
+        <Search className="text-theme-gray-dark size-4" />
       </button>
 
       <input
@@ -93,7 +93,7 @@ export const SearchInput = ({ searchType, fullWidth }: SearchInputProps) => {
         placeholder={input.placeholder}
         value={input.value}
         onChange={(e) => input.setValue(e.target.value)}
-        className={`text-theme-gray placeholder:text-theme-gray bg-transparent text-sm transition-all duration-300 ease-in-out focus:outline-none ${
+        className={`text-theme-gray-dark placeholder:text-theme-gray-dark bg-transparent text-sm transition-all duration-300 ease-in-out focus:outline-none ${
           fullWidth
             ? "w-full px-1 opacity-100"
             : input.show

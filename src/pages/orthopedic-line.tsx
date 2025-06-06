@@ -12,7 +12,7 @@ export const OrthopedicLine = () => {
       <FamiliesSection />
       <Divider />
 
-      <div className="0.5xl:mt-16 mt-6 flex flex-row gap-6">
+      <div className="mt-6 flex flex-row gap-6 lg:mt-16">
         <FiltersSection />
 
         <ProductsSection />

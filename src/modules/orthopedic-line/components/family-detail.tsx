@@ -1,6 +1,6 @@
 export const FamilyDetail = () => {
   return (
-    <p className="font-theme-raleway text-theme-gray-dark text-center font-normal lg:max-w-[510px] lg:text-start">
+    <p className="text-theme-gray-dark text-center lg:max-w-[31.875rem] lg:text-start">
       Família voltada para extrair os benefícios do Neoprene.{" "}
       <br className="hidden lg:block" />
       <span className="text-theme-black">

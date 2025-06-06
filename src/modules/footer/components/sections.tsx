@@ -12,11 +12,11 @@ export const FooterSection = ({
   className = "",
 }: FooterSectionProps) => (
   <section
-    className={`flex flex-col gap-2 text-sm text-white sm:gap-4 sm:text-base ${className}`}
+    className={`text-body-base-500 flex flex-col gap-2 text-white sm:gap-4 ${className}`}
     style={{ fontFamily: "Roboto, sans-serif" }}
   >
-    <h1 className="font-semibold">{title}</h1>
-    <div className="text-theme-gray-60 flex flex-col gap-1 text-xs sm:gap-2 sm:text-base">
+    <h1>{title}</h1>
+    <div className="text-theme-gray-60 flex flex-col gap-1 text-xs font-normal sm:gap-2 sm:text-base">
       {items.map((item, index) => (
         <div key={index}>{item}</div>
       ))}
@@ -60,7 +60,7 @@ export const SectionContatos = () => (
         <img src={imagePath("icons/telephone.svg")} className="size-8" alt="" />
         <span>+55 48 3333 3333</span>
       </div>,
-      <div className="flex items-center gap-2" key="email">
+      <div className="flex items-center gap-2 pt-2 lg:pt-0" key="email">
         <img src={imagePath("icons/email.svg")} className="size-8" alt="" />
         <span>
           sac@loremipsum.com.br ou <br />

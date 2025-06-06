@@ -14,9 +14,7 @@ export const FooterSectionsMobile = () => {
           <SectionInsitucional />
         </div>
         <div className="my-auto flex w-1/2 justify-center">
-          <span className="font-theme-raleway text-3xl font-medium text-white">
-            LOGO
-          </span>
+          <span className="text-logo text-white">LOGO</span>
         </div>
       </div>
 

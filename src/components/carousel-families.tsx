@@ -22,13 +22,13 @@ export const CarouselOfFamilies = () => {
               onClick={() => setSelectedFamily(family)}
             >
               <div
-                className={`bg-theme-muted flex w-fit cursor-pointer items-center justify-center gap-2 rounded-lg p-2 ${
+                className={`bg-theme-gray-50 flex w-fit cursor-pointer items-center justify-center gap-2 rounded-lg p-2 ${
                   isSelected
-                    ? "bg-theme-purple text-white"
-                    : "bg-theme-muted text-theme-purple"
+                    ? "bg-theme-purple-brand text-white"
+                    : "bg-theme-gray-50 text-theme-purple-brand"
                 } `}
               >
-                <span className="font-theme-raleway 0.5xl:text-xs font-medium whitespace-nowrap md:text-sm lg:text-base">
+                <span className="0.5xl:text-xs font-medium whitespace-nowrap md:text-sm lg:text-base">
                   {family}
                   <sup className="ml-0.5 text-xs">®</sup>
                 </span>

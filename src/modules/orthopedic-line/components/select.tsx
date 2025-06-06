@@ -8,10 +8,11 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
+// TODO: componentizar e aplicar logica
 export const SelectFamily = () => {
   return (
     <Select>
-      <SelectTrigger className="bg-theme-muted w-full cursor-pointer rounded-none border-x-0 border-b-0 py-[41.5px]">
+      <SelectTrigger className="bg-theme-gray-50 w-full cursor-pointer rounded-none border-x-0 border-b-0 py-[2.59375rem]">
         <SelectValue placeholder="Famílias/Tecnologias" />
       </SelectTrigger>
       <SelectContent>
@@ -31,7 +32,7 @@ export const SelectFamily = () => {
 export const SelectProduct = () => {
   return (
     <Select>
-      <SelectTrigger className="bg-theme-muted w-full cursor-pointer rounded-none rounded-b-lg border-x-0 border-b-0 py-[41.5px]">
+      <SelectTrigger className="bg-theme-gray-50 w-full cursor-pointer rounded-none rounded-b-lg border-x-0 border-b-0 py-[2.59375rem]">
         <SelectValue placeholder="Famílias/Tecnologias" />
       </SelectTrigger>
       <SelectContent>

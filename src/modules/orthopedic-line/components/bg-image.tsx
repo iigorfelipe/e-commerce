@@ -23,7 +23,7 @@ export const BgImage = () => {
             alt="logo da linha orthopedic"
           />
 
-          <ul className="text-title-base-500 text-theme-black max-w-[39.25rem] pl-8 lg:list-disc">
+          <ul className="sm:text-title-base-500 text-theme-black max-w-[39.25rem] text-center font-medium sm:pl-8 md:text-start lg:list-disc">
             <li>
               Produtos desenvolvidos para auxiliar na prevenção e retorno das
               atividades, no tratamento e recuperação de pacientes com lesões

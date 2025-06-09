@@ -1,5 +1,7 @@
 import type { TProduct } from "@/common/types";
+import { imagePath } from "@/common/utils/image-path";
 import { ProductDetailCarousel } from "@/components/product-detail-carousel";
+import { Button } from "@/components/ui/button";
 import { Maximize2 } from "lucide-react";
 
 type ProductDetailsProps = {
@@ -56,9 +58,25 @@ export const ProductDetails = ({ productDetail }: ProductDetailsProps) => {
               </span>
             ))}
           </span>
-          <Maximize2 className="size-6 rotate-x-180" />
-          <span className="pt-1">Descubra o seu tamanho ideal</span>
+
+          <div className="text-theme-orange-brand flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+            <div className="flex items-center gap-1">
+              <Maximize2 className="size-4 rotate-x-180" />
+              <span>Descubra o seu tamanho ideal</span>
+            </div>
+            <div className="flex items-center gap-1">
+              <img src={imagePath("/icons/tape.svg")} alt="tape" />
+              <span className="text-theme-gray-dark">Tabela de medidas</span>
+            </div>
+          </div>
         </section>
+        <Button variant="theme" size="theme" className="mt-10 w-fit">
+          Encontrar lojas online
+        </Button>
+
+        <span className="text-body-base-500 text-theme-gray-dark mt-4 cursor-pointer underline">
+          Gostou desse produto? Seja um vendedor
+        </span>
       </div>
     </div>
   );

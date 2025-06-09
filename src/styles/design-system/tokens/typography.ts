@@ -13,6 +13,14 @@ export const TYPOGRAPHY = {
     "clamp(0.875rem, 1.171vw, 1.125rem)", // 14px a 18px
     { lineHeight: "1.25rem", fontWeight: "500" },
   ],
+  "title-sm-500": [
+    "clamp(1.25rem, 1.031vw, 1.375rem)", // 16px a 22px
+    { lineHeight: "1.5rem", fontWeight: "500" },
+  ],
+  "title-sm-700": [
+    "clamp(1.25rem, 1.031vw, 1.375rem)", // 16px a 22px
+    { lineHeight: "1.5rem", fontWeight: "700" },
+  ],
   "title-base-500": [
     "clamp(1.25rem, 1.756vw, 1.625rem)", // 20px a 26px
     { lineHeight: "1.625rem", fontWeight: "500" },

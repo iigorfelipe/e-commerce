@@ -25,6 +25,8 @@ export default {
         logo: TYPOGRAPHY.logo,
         "body-sm-700": TYPOGRAPHY["body-sm-700"],
         "body-base-500": TYPOGRAPHY["body-base-500"],
+        "title-sm-500": TYPOGRAPHY["title-sm-500"],
+        "title-sm-700": TYPOGRAPHY["title-sm-700"],
         "title-base-500": TYPOGRAPHY["title-base-500"],
         "title-lg-500": TYPOGRAPHY["title-lg-500"],
         "title-lg-700": TYPOGRAPHY["title-lg-700"],

@@ -18,7 +18,7 @@ export const ProductCard = memo(({ product, page }: ProductProps) => {
 
   return (
     <div
-      className="group relative flex w-[10.5rem] flex-col gap-4 lg:w-[16.75rem]"
+      className="group relative flex w-full flex-col gap-4"
       onClick={handleClick}
     >
       {product.isNew && (
@@ -30,7 +30,7 @@ export const ProductCard = memo(({ product, page }: ProductProps) => {
         src={product.image}
         alt={product.name}
         loading="lazy"
-        className="h-[14.875rem] cursor-pointer rounded-sm group-hover:opacity-75 lg:h-[21.125rem] lg:rounded-md"
+        className="w-full cursor-pointer rounded-sm group-hover:opacity-75 lg:rounded-md"
       />
       <div className="flex flex-col">
         <p className="text-body-base-500">{product.name}</p>

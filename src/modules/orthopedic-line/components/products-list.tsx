@@ -18,7 +18,7 @@ export const ProductList = () => {
 
   return (
     <div className="hidden flex-col gap-[4.5rem] lg:flex">
-      <div className="hidden flex-wrap gap-x-[1.875rem] gap-y-[1.875rem] sm:flex">
+      <div className="hidden w-full grid-cols-3 gap-[1.875rem] sm:grid">
         {currentItems.map((product) => (
           <ProductCard key={product.id} product={product} page={page} />
         ))}

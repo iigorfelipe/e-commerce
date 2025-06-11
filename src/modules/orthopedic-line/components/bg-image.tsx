@@ -6,10 +6,7 @@ export const LOGO_HEIGHT = `clamp(18px, 5.125vw, 80px)`;
 
 export const BgImage = () => {
   return (
-    <div
-      className="mx-undo-container-px relative h-[calc(100dvh-5rem)] bg-cover bg-center lg:bg-[center_37%]"
-      style={{ backgroundImage: `url(${imagePath("images/home-bg.jpg")})` }}
-    >
+    <div className="bg-home mx-undo-container-px relative h-[calc(100dvh-5rem)]">
       <Gradient />
 
       <div className="px-container-px relative z-10 flex h-full flex-col py-8">

@@ -118,3 +118,16 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .bg-home {
+    @apply bg-cover bg-center lg:bg-[center_37%];
+    background-image: url("/images/home-bg.jpg");
+  }
+
+  @media (min-width: 1024px) {
+    .bg-home {
+      background-image: url("/images/home-bg-original.jpg");
+    }
+  }
+}

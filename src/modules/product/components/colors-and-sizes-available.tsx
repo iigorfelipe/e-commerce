@@ -15,7 +15,10 @@ export const ColorsAndSizesAvailable = ({
         Cores disponíveis:
         {details.colors.map((color) => (
           <>
-            <div className={`size-3.5 rounded-full bg-[${color.hex}]`} />
+            <div
+              className="size-3.5 rounded-full"
+              style={{ backgroundColor: color.hex }}
+            />
             {color.label}
           </>
         ))}

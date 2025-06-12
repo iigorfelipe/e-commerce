@@ -1,8 +1,13 @@
 import type { TProduct } from "@/common/types";
-import { imagePath } from "@/common/utils/image-path";
 import { ProductDetailCarousel } from "@/components/product-detail-carousel";
 import { Button } from "@/components/ui/button";
-import { Maximize2 } from "lucide-react";
+import { Description } from "./components/description";
+import { ColorsAndSizesAvailable } from "./components/colors-and-sizes-available";
+import { ProductTitle } from "./components/title";
+
+import { CarouselOfProducts } from "@/components/carousel-products";
+import { TechnicalDetails } from "./components/technical-details";
+import { ProductDetailImage } from "./components/detail-image";
 
 type ProductDetailsProps = {
   productDetail: TProduct;
@@ -10,73 +15,53 @@ type ProductDetailsProps = {
 
 export const ProductDetails = ({ productDetail }: ProductDetailsProps) => {
   return (
-    <div className="flex flex-col gap-8 sm:flex-row lg:pt-8">
-      <ProductDetailCarousel images={productDetail.details.images} />
+    <div className="flex flex-col pt-8">
+      <div className="flex flex-col gap-8 sm:flex-row">
+        <ProductDetailCarousel images={productDetail.details.images} />
 
-      <div className="flex w-full flex-col sm:max-w-1/2">
-        <p className="text-theme-gray-dark text-body-base-500">
-          {productDetail.details.productFamily}
-          <sup className="ml-0.5 text-xs">®</sup>
-        </p>
-        <h1 className="bg-theme-purple-brand text-title-xl-700 mt-2 mb-4 rounded-md p-2 text-white">
-          {productDetail.name}
-        </h1>
+        <div className="flex w-full flex-col gap-6 md:max-w-1/2">
+          <ProductTitle {...productDetail} />
 
-        <span className="text-theme-gray-brand text-sm">
-          Código SKU {productDetail.code} Lado direito / Código SKU{" "}
-          {productDetail.code} Lado esquerdo
-        </span>
+          <Description description={productDetail.details.description} />
 
-        <p className="text-theme-black pt-6 pb-2">Descrição</p>
-        <p className="text-theme-gray-dark">
-          {productDetail.details.description}
-        </p>
-
-        <p className="pt-6 pb-2">
-          Nível {productDetail.details.level.split("-")[0]}
-        </p>
-        <p>{productDetail.details.level.split("-")[1]}</p>
-
-        <div className="border-theme-gray-60 my-6 border-t" />
-
-        <section className="flex flex-col gap-4">
-          <span className="flex flex-row items-center gap-2">
-            Cores disponíveis:
-            {productDetail.details.colors.map((color) => (
-              <>
-                <div className={`size-3.5 rounded-full bg-[${color.hex}]`} />
-                {color.label}
-              </>
-            ))}
-          </span>
-          <span>Modelo: {productDetail.details.model}</span>
-          <span className="flex flex-row items-center gap-2">
-            Tamanhos disponíveis:
-            {productDetail.details.sizes.map((size) => (
-              <span className="bg-theme-gray-60 text-theme-gray-dark rounded-sm px-2">
-                {size}
-              </span>
-            ))}
-          </span>
-
-          <div className="text-theme-orange-brand flex flex-col items-start gap-4 sm:flex-row sm:items-center">
-            <div className="flex items-center gap-1">
-              <Maximize2 className="size-4 rotate-x-180" />
-              <span>Descubra o seu tamanho ideal</span>
-            </div>
-            <div className="flex items-center gap-1">
-              <img src={imagePath("/icons/tape.svg")} alt="tape" />
-              <span className="text-theme-gray-dark">Tabela de medidas</span>
-            </div>
+          <div className="text-body-base-400 flex flex-col gap-2">
+            <p className="text-theme-black">
+              Nível {productDetail.details.level.split("-")[0]}
+            </p>
+            <p>{productDetail.details.level.split("-")[1]}</p>
           </div>
-        </section>
-        <Button variant="theme" size="theme" className="mt-10 w-fit">
-          Encontrar lojas online
-        </Button>
 
-        <span className="text-body-base-500 text-theme-gray-dark mt-4 cursor-pointer underline">
-          Gostou desse produto? Seja um vendedor
-        </span>
+          <div className="border-theme-gray-60 border-t" />
+
+          <ColorsAndSizesAvailable details={productDetail.details} />
+
+          <Button variant="theme" size="theme" className="mt-4 w-fit">
+            Encontrar lojas online
+          </Button>
+
+          <span className="text-body-base-500 text-theme-gray-dark -mt-2 cursor-pointer underline">
+            Gostou desse produto? Seja um vendedor
+          </span>
+        </div>
+      </div>
+
+      <iframe
+        className="mt-12 mb-10 aspect-video w-full lg:h-dvh"
+        src="https://www.youtube.com/embed/_Nzt8-mTlSA"
+        title="YouTube video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+
+      <ProductDetailImage />
+      <TechnicalDetails />
+
+      <div className="flex flex-col gap-8 pt-20">
+        <h2 className="text-title-lg-500">
+          Conheça também <br /> nossos outros produtos
+        </h2>
+
+        <CarouselOfProducts />
       </div>
     </div>
   );

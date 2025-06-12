@@ -5,7 +5,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { ZoomIn } from "lucide-react";
+import { Download, ZoomIn } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
 
@@ -13,7 +13,7 @@ export const ProductDetailCarousel = ({ images }: { images: string[] }) => {
   const [selectedImg, setSelectedImg] = useState(images[0]);
 
   return (
-    <div className="flex flex-col gap-4 lg:w-[42.75rem]">
+    <div className="flex h-fit flex-col gap-4 lg:w-[42.75rem]">
       <div className="relative">
         <img
           src={selectedImg}
@@ -57,6 +57,14 @@ export const ProductDetailCarousel = ({ images }: { images: string[] }) => {
           <CarouselNext className="hidden cursor-pointer border-none sm:flex" />
         </Carousel>
       </div>
+
+      <Button
+        variant="theme"
+        className="text-theme-orange-brand hover:bg-theme-orange-brand/5 w-fit bg-transparent"
+      >
+        <span className=""> Baixar Folder do Produto</span>
+        <Download />
+      </Button>
     </div>
   );
 };

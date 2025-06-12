@@ -84,7 +84,7 @@ const FamilyDetail = memo(() => {
 
 const AnvisaDetail = memo(() => {
   return (
-    <div className="border-theme-orange-brand flex h-fit w-fit flex-col gap-4 rounded-[0.625rem] border-1 border-dotted p-3.5 lg:max-w-[14.0625rem] lg:px-6 lg:py-3">
+    <div className="border-theme-orange-brand flex h-fit max-w-[14.0625rem] flex-col gap-4 rounded-[0.625rem] border-1 border-dotted p-3.5 lg:px-6 lg:py-3">
       <img
         src={imagePath("/images/anvisa.jpg")}
         className="lg:max-w-[10.8125rem]"

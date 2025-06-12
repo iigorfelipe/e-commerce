@@ -70,13 +70,13 @@ export const SideBar = () => {
 };
 
 const countrys = [
-  { label: "Brasil", pathIcon: "icons/flag-br.svg" },
+  { label: "Português", pathIcon: "icons/flag-br.svg" },
   {
-    label: "EUA",
+    label: "Inglês",
     pathIcon: "icons/flag-us.svg",
   },
   {
-    label: "México",
+    label: "Espanhol",
     pathIcon: "icons/flag-es.svg",
   },
 ];
@@ -86,7 +86,7 @@ const Countrys = () => {
   return (
     <details className="group">
       <summary className="flex w-full cursor-pointer items-center justify-between px-4 py-2 hover:bg-gray-100">
-        <span> Selecionar País</span>
+        <span> Selecionar idioma</span>
         <div className="flex items-center gap-1">
           <img
             src={imagePath("icons/flag-br.svg")}

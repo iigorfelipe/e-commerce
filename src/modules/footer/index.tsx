@@ -36,7 +36,7 @@ export const Footer = () => {
 
       <div className="flex flex-col items-center justify-between gap-2 pt-[18px] pb-8 sm:flex-row sm:items-start">
         <Button variant="ghost" className="text-white">
-          Selecionar País
+          Selecionar idioma
           <img
             src={imagePath("icons/flag-br.svg")}
             alt="bandeira do brasil"

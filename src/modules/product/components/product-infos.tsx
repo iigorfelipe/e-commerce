@@ -20,12 +20,11 @@ export const ProductDetailImage = () => {
 
         <div className="relative">
           <picture>
-            {/* Imagem para desktop (largura mínima 1280px) */}
             <source
               media="(min-width: 1280px)"
               srcSet={imagePath("/images/product-detail-desktop.jpg")}
             />
-            {/* Imagem para mobile como fallback */}
+
             <img
               src={imagePath("/images/product-detail-mobile.jpg")}
               className="h-full w-full object-cover pb-[0.0625rem]"
@@ -36,16 +35,6 @@ export const ProductDetailImage = () => {
 
           <div className="absolute bottom-0 h-[9.5rem] w-full bg-gradient-to-t from-white to-transparent" />
         </div>
-
-        {/* <div className="relative">
-          <img
-            src={productImage}
-            className="h-full w-full object-cover pb-[0.0625rem]"
-            alt="Produto"
-          />
-
-          <div className="absolute bottom-0 h-[9.5rem] w-full bg-gradient-to-t from-white to-transparent" />
-        </div> */}
 
         {isDesktop && <AnvisaDetail />}
       </div>

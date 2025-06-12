@@ -7,7 +7,7 @@ import { ProductTitle } from "./components/title";
 
 import { CarouselOfProducts } from "@/components/carousel-products";
 import { TechnicalDetails } from "./components/technical-details";
-import { ProductDetailImage } from "./components/detail-image";
+import { ProductDetailImage } from "./components/product-infos";
 
 type ProductDetailsProps = {
   productDetail: TProduct;

@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import { memo } from "react";
 
-export const ProductDetailImage = () => {
+export const ProductInfos = () => {
   const isDesktop = useIsDesktop();
 
   return (

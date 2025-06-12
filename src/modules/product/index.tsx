@@ -7,7 +7,7 @@ import { ProductTitle } from "./components/title";
 
 import { CarouselOfProducts } from "@/components/carousel-products";
 import { TechnicalDetails } from "./components/technical-details";
-import { ProductDetailImage } from "./components/product-infos";
+import { ProductInfos } from "./components/product-infos";
 
 type ProductDetailsProps = {
   productDetail: TProduct;
@@ -53,7 +53,7 @@ export const ProductDetails = ({ productDetail }: ProductDetailsProps) => {
         allowFullScreen
       />
 
-      <ProductDetailImage />
+      <ProductInfos />
       <TechnicalDetails />
 
       <div className="flex flex-col gap-8 pt-20">

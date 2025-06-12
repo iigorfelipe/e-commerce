@@ -1,17 +1,21 @@
+
 <div align="center">
 
 # Loja Ortopédica
 
-[🔗 Acesse o site](https://iigorfelipe.github.io/e-commerce/#/orthopedic-line)
-
 </div>
+
+[🔗 Acesse o site](https://iigorfelipe.github.io/e-commerce/#/orthopedic-line)
 
 ## 🖼️ Imagens:
 
-<img src="https://github.com/user-attachments/assets/2477eef8-26f6-447c-a734-e8d99298acd7" alt="mobile detail" height="450px" /> <img src="https://github.com/user-attachments/assets/90cffb4c-e6a1-416a-888e-a9e7b2706367" alt="mobile detail" height="450px" /> <img src="https://github.com/user-attachments/assets/bb0b5d15-8acd-4b9d-b262-6d667b924229" alt="mobile detail" height="450px" /> | <img src="https://github.com/user-attachments/assets/bbd64a5f-fb6c-4393-b09a-5f124fff4060" alt="mobile detail" height="450px" />
-
-<img src="https://github.com/user-attachments/assets/046dd991-ab9e-4fa0-b649-7d8ddf7d8056" alt="desktop home" height="450px" />
-<img src="https://github.com/user-attachments/assets/7f2c7b90-96d8-4ac6-bf91-1cc1e91eabe4" alt="desktop footer" height="450px" />
+<div align="center">
+<img src="https://github.com/user-attachments/assets/046dd991-ab9e-4fa0-b649-7d8ddf7d8056" />
+<img src="https://github.com/user-attachments/assets/9b2627c9-e1af-4a2a-a4b2-5b16814555e2" alt="mobile detail" height="450px" />
+<img src="https://github.com/user-attachments/assets/bf23e99b-0d23-4eef-ab90-0a28be15c909" alt="mobile detail" height="450px" />
+<img src="https://github.com/user-attachments/assets/6faace96-b55a-482d-b700-3ed9d907587b" alt="mobile detail" height="450px" />
+<img src="https://github.com/user-attachments/assets/651d0c0e-5a01-4dd7-924d-e3d541ed2658" alt="mobile detail" height="450px" />
+</div>
 
 ## 📄 Sobre o Projeto:
 
@@ -25,7 +29,7 @@ A versão mobile foi completamente **projetada do zero**, baseada em referência
 
 - Hierarquia clara de informações
 - Tamanhos de fonte e espaçamento ajustados para leitura confortável
-- Menu mobile acessível e funcional (hamburger)
+- Menu mobile acessível e funcional
 - Layout fluido e adaptado para diferentes tamanhos de tela
 
 ## 🧠 Decisões de Arquitetura e Design
@@ -82,7 +86,7 @@ npm run dev
 
 ##
 
-⚠️ Observação: algumas funcionalidades, como os filtros e a finalização da tela de detalhes do produto, ainda não estão 100% concluídas. Foquei em entregar a base visual responsiva, conforme os requisitos. Em um cenário real, essas funcionalidades seriam divididas em tasks e implementadas de forma iterativa, com foco em entregas contínuas e de valor para o usuário. Continuarei trabalhando para integrar essas partes faltantes e expandir o projeto com novas funcionalidades e melhorias, conforme o tópico abaixo.
+- Observação: algumas funcionalidades, como os filtros, ainda não estão 100% concluídas. Foquei em entregar a base visual responsiva, conforme os requisitos.
 
 ## 💡 Melhorias Futuras:
 
